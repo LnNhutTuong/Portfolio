@@ -65,3 +65,145 @@ experienceList.innerHTML = experience
     `
   )
   .join("");
+
+//Languages
+const languages = [
+  {
+    name: "C/Cpp/C#",
+    icon: "./assets/icons/c.svg",
+  },
+  {
+    name: "Java",
+    icon: "./assets/icons/c.svg",
+  },
+  {
+    name: "SQL",
+    icon: "./assets/icons/sql.svg",
+  },
+
+  {
+    name: "Python",
+    icon: "./assets/icons/python.svg",
+  },
+  {
+    name: "HTML",
+    icon: "./assets/icons/html.svg",
+  },
+  {
+    name: "CSS",
+    icon: "./assets/icons/css.svg",
+  },
+  {
+    name: "JavaScript",
+    icon: "./assets/icons/js.svg",
+  },
+  {
+    name: "PHP",
+    icon: "./assets/icons/js.svg",
+  },
+];
+
+const listLanguages = document.getElementById("languages");
+listLanguages.innerHTML = languages
+  .map(
+    (item) =>
+      `
+ <li class="language-item col-auto d-flex justify-content-center">
+    <img src="${item.icon}" alt="icon" />
+    <p class="mb-0 mt-1 ms-0" id="name">${item.name}</p>
+  </li>
+`
+  )
+  .join("");
+
+// Tools
+const tools = [
+  {
+    name: "Git",
+    icon: "./assets/icons/c.svg",
+  },
+  {
+    name: "Github Action",
+    icon: "./assets/icons/c.svg",
+  },
+  {
+    name: "Docker",
+    icon: "./assets/icons/sql.svg",
+  },
+
+  {
+    name: "Postman",
+    icon: "./assets/icons/python.svg",
+  },
+  {
+    name: "Figma",
+    icon: "./assets/icons/html.svg",
+  },
+  {
+    name: "VS Code",
+    icon: "./assets/icons/css.svg",
+  },
+];
+
+const listTools = document.getElementById("tools");
+listTools.innerHTML = tools
+  .map(
+    (item) =>
+      `
+ <li class="tool-item col-auto d-flex justify-content-center">
+    <img src="${item.icon}" alt="icon" />
+    <p class="mb-0 mt-1 ms-0" id="name">${item.name}</p>
+  </li>
+`
+  )
+  .join("");
+
+// frameworks
+const frameworks = [
+  {
+    name: "React",
+    icon: "./assets/icons/c.svg",
+  },
+  {
+    name: "NodeJS",
+    icon: "./assets/icons/c.svg",
+  },
+];
+
+const listFrameworks = document.getElementById("frameworks");
+listFrameworks.innerHTML = frameworks
+  .map(
+    (item) =>
+      `
+    <li class="framework-item col-auto d-flex justify-content-center">
+      <img src="${item.icon}" alt="icon" />
+      <p class="mb-0 mt-1 ms-0" id="name">${item.name}</p>
+    </li>
+`
+  )
+  .join("");
+
+// database
+const database = [
+  {
+    name: "MSSQL",
+    icon: "./assets/icons/c.svg",
+  },
+  {
+    name: "MySQL",
+    icon: "./assets/icons/c.svg",
+  },
+];
+
+const listDatabase = document.getElementById("database");
+listDatabase.innerHTML = database
+  .map(
+    (item) =>
+      `
+    <li class="database-item col-auto d-flex justify-content-center">
+      <img src="${item.icon}" alt="icon" />
+      <p class="mb-0 mt-1 ms-0" id="name">${item.name}</p>
+    </li>
+`
+  )
+  .join("");

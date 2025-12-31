@@ -13,6 +13,12 @@ body {
   /* background-repeat: no-repeat; */
 }
 
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 a.navbar-brand {
   font-size: 30px !important;
   font-weight: bolder;
@@ -111,4 +117,105 @@ a.navbar-brand {
   margin: 0;
   font-size: 18px;
   font-family: "Times New Roman", Times, serif;
+}
+
+.techstack-and-skills img {
+  padding-right: 3px;
+  max-width: 37%;
+}
+
+.languages {
+  height: 240px;
+  border: 1px solid black;
+  margin: 10px 35px 35px 35px;
+  padding: 5px 15px 20px 30px !important;
+  border-radius: 60px 60px 60px 60px;
+  -webkit-border-radius: 60px 60px 60px 60px;
+  -moz-border-radius: 60px 60px 60px 60px;
+}
+
+.language-item {
+  font-size: 13px;
+  font-weight: bold;
+  padding: 10px;
+  margin: 5px 5px 5px 14px;
+
+  border: 1px solid black;
+  height: fit-content;
+  border-radius: 60px 60px 60px 60px;
+  -webkit-border-radius: 60px 60px 60px 60px;
+  -moz-border-radius: 60px 60px 60px 60px;
+  width: 100px;
+}
+
+.tools {
+  height: 240px;
+  border: 1px solid black;
+  margin: 10px 35px 35px 35px;
+  padding: 5px 15px 20px 30px !important;
+  border-radius: 60px 60px 60px 60px;
+  -webkit-border-radius: 60px 60px 60px 60px;
+  -moz-border-radius: 60px 60px 60px 60px;
+}
+
+.tool-item {
+  font-size: 13px;
+  font-weight: bold;
+  padding: 10px;
+  margin: 5px 5px 5px 14px;
+
+  border: 1px solid black;
+  height: fit-content;
+  border-radius: 60px 60px 60px 60px;
+  -webkit-border-radius: 60px 60px 60px 60px;
+  -moz-border-radius: 60px 60px 60px 60px;
+  width: 100px;
+}
+
+.framework {
+  height: 240px;
+  border: 1px solid black;
+  margin: 10px 35px 35px 35px;
+  padding: 5px 15px 20px 30px !important;
+  border-radius: 60px 60px 60px 60px;
+  -webkit-border-radius: 60px 60px 60px 60px;
+  -moz-border-radius: 60px 60px 60px 60px;
+}
+
+.framework-item {
+  font-size: 13px;
+  font-weight: bold;
+  padding: 10px;
+  margin: 5px 5px 5px 14px;
+
+  border: 1px solid black;
+  height: fit-content;
+  border-radius: 60px 60px 60px 60px;
+  -webkit-border-radius: 60px 60px 60px 60px;
+  -moz-border-radius: 60px 60px 60px 60px;
+  width: 100px;
+}
+
+.database {
+  height: 240px;
+  border: 1px solid black;
+  margin: 10px 35px 35px 35px;
+  padding: 5px 15px 20px 30px !important;
+  border-radius: 60px 60px 60px 60px;
+  -webkit-border-radius: 60px 60px 60px 60px;
+  -moz-border-radius: 60px 60px 60px 60px;
+}
+
+.database-item {
+  font-size: 13px;
+  font-weight: bold;
+  padding: 10px;
+  margin: 5px 5px 5px 14px;
+
+  border: 1px solid black;
+  height: fit-content;
+  border-radius: 60px 60px 60px 60px;
+  -webkit-border-radius: 60px 60px 60px 60px;
+  -moz-border-radius: 60px 60px 60px 60px;
+  width: 100px;
 }
