@@ -1,0 +1,114 @@
+html {
+  min-height: 100vh;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  background-image: url("../images/pexels-scottwebb-3255761.jpg");
+  /* background-size: cover; */
+  /* background-position: center;  */
+  /* background-repeat: no-repeat; */
+}
+
+a.navbar-brand {
+  font-size: 30px !important;
+  font-weight: bolder;
+  margin-right: -25px;
+}
+
+.main-content {
+  background-color: white;
+  max-width: 66%;
+}
+.contact-icon {
+  max-width: fit-content;
+  max-height: fit-content;
+}
+.contact-icon img {
+  width: 48px;
+  height: 48px;
+}
+
+.about-me .me2 {
+  margin-bottom: 20px;
+  max-height: 220px;
+  border-radius: 137px 137px 137px 137px;
+  -webkit-border-radius: 137px 137px 137px 137px;
+  -moz-border-radius: 137px 137px 137px 137px;
+  background: linear-gradient(to right, rgb(68, 106, 151), rgb(109, 178, 218));
+  box-shadow: 0 0 22px rgba(28, 98, 178, 0.568);
+  position: relative;
+  padding: 3px;
+}
+
+.about-me .contact-icons img {
+  width: 20px;
+  height: 20px;
+}
+
+.skills {
+  font-size: 22px;
+}
+
+.skill-tag {
+  margin: 0 2px 0 2px;
+  padding: 8px 16px 8px 16px;
+  border: 1px solid #000000;
+  border-radius: 50px;
+  outline: none;
+}
+
+/* projects */
+.card.mt-3 {
+  margin-left: 10px;
+}
+
+/* ---------------ABOUT-------------- */
+.myself {
+  margin: 0;
+  text-align: justify;
+  /* text-indent: 2rem; */
+  padding: 0 40px 0 40px;
+  font-size: 19px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+#education-list .date {
+  margin: 0;
+  font-family: monospace;
+  font-weight: 10%;
+}
+
+#education-list .name {
+  margin: 0;
+  font-weight: bold;
+}
+
+#education-list,
+.level,
+.address {
+  margin: 0;
+  font-family: "Times New Roman", Times, serif;
+}
+
+#experience-list .date {
+  margin: 0;
+  font-family: monospace;
+  font-weight: 10%;
+}
+
+#experience-list .name {
+  margin: 0;
+  font-weight: bold;
+}
+
+#experience-list,
+.position,
+.address {
+  margin: 0;
+  font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
+}
