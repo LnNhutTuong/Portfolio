@@ -15,9 +15,10 @@ const education = [
   },
   {
     date: "2020 - 2023",
-    school: "Suzuran - Suzuran Boys High School",
-    level: "High School",
-    address: "3-17-1 Kurobane Town, Toaru City, Gunma Prefecture, Japan",
+    school: "TTGDTX An Giang - AnGiang Continuing Education Center",
+    level: "",
+    address:
+      "394 Lý Thái Tổ, Phường Mỹ Xuyên, Thành Phố Long Xuyên, Tỉnh An Giang",
   },
   {
     date: "2023 - ...",
@@ -170,7 +171,7 @@ const frameworks = [
   },
 ];
 
-const listFrameworks = document.getElementById("frameworks");
+const listFrameworks = document.getElementById("framework");
 listFrameworks.innerHTML = frameworks
   .map(
     (item) =>
@@ -190,7 +191,7 @@ const database = [
     icon: "./assets/icons/c.svg",
   },
   {
-    name: "MySQL",
+    name: "MySql",
     icon: "./assets/icons/c.svg",
   },
 ];

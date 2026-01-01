@@ -19,10 +19,14 @@ ul {
   margin: 0;
 }
 
-a.navbar-brand {
+h1,
+h3 {
+  font-weight: bold;
+}
+`` a.navbar-brand {
   font-size: 30px !important;
   font-weight: bolder;
-  margin-right: -25px;
+  /* margin-right: -25px; */
 }
 
 .main-content {
@@ -33,9 +37,18 @@ a.navbar-brand {
   max-width: fit-content;
   max-height: fit-content;
 }
+
+.infor p {
+  font-size: 22px;
+}
+
 .contact-icon img {
   width: 48px;
   height: 48px;
+}
+
+.contact-icon img:hover {
+  box-shadow: 0 0 22px rgba(0, 0, 0, 0.568);
 }
 
 .about-me .me2 {
@@ -50,6 +63,9 @@ a.navbar-brand {
   padding: 3px;
 }
 
+.about-me p {
+  font-size: 22px;
+}
 .about-me .contact-icons img {
   width: 20px;
   height: 20px;
@@ -67,6 +83,9 @@ a.navbar-brand {
   outline: none;
 }
 
+.skill-tag:hover {
+  box-shadow: 0 0 22px rgba(0, 0, 0, 0.568);
+}
 /* projects */
 .card.mt-3 {
   margin-left: 10px;
@@ -122,6 +141,18 @@ a.navbar-brand {
 .techstack-and-skills img {
   padding-right: 3px;
   max-width: 37%;
+}
+
+.techstack-and-skills li:hover,
+hover {
+  box-shadow: 0 0 22px rgba(0, 0, 0, 0.568);
+}
+
+.languages:hover,
+.framework:hover,
+.tools:hover,
+.database:hover {
+  box-shadow: 0 0 22px rgba(0, 0, 0, 0.568);
 }
 
 .languages {
