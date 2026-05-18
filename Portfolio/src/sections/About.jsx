@@ -30,7 +30,7 @@ const About = () => {
 
             <div className="grid grid-cols-1 gap-4">
               <div className="p-4 rounded-xl text-center border bg-slate-900/60 border-slate-800">
-                <span className="block text-xl sm:text-2xl font-extrabold text-emerald-400">
+                <span className="block text-xl sm:text-2xl font-extrabold text-indigo-400">
                   2+
                 </span>
                 <span className="text-[10px] sm:text-xs text-slate-500 font-medium">
@@ -46,8 +46,8 @@ const About = () => {
               <div className="space-y-6 relative border-l border-slate-800 pl-4 ml-2">
                 {currentExperiences.map((exp, idx) => (
                   <div key={idx} className="relative">
-                    <span className="absolute -left-[23px] top-1.5 w-3 h-3 rounded-full border-2 border-slate-950 bg-emerald-400" />
-                    <span className="text-xs text-emerald-400 font-bold">
+                    <span className="absolute -left-[25px] top-1.5 w-3 h-3 rounded-full border-2 border-slate-950 bg-indigo-400" />
+                    <span className="text-xs text-indigo-400 font-bold">
                       {exp.time}
                     </span>
                     <h5 className="font-bold text-base mt-0.5 text-slate-200">
