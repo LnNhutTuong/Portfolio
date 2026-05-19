@@ -4,12 +4,12 @@ export const PERSONAL_INFO = {
   aboutShort: "Lorem",
   aboutLong: "lorem ipsum dolor sit amet consectetur adipiscing elit",
   email: "lnnhuttuong@gmail.com",
-  phone: "0325729105",
+  phone: "0333814020",
   address: "Long Xuyên, An Giang, Việt Nam",
-  github: "https://github.com/your-username",
+  github: "https://github.com/LnNhutTuong",
   linkedin: "https://linkedin.com/in/your-username",
-  facebook: "https://facebook.com/your-username",
-  ins: "https://instagram.com/your-username",
+  facebook: "https://www.facebook.com/profile.php?id=61570601574809",
+  ins: "https://www.instagram.com/bi._wasi/",
 };
 
 export const SKILLS = [
@@ -130,17 +130,14 @@ export const SKILLS = [
 export const PROJECTS = [
   {
     id: 1,
-    title: "Ứng dụng E-Commerce TrendyShop",
-    category: "Frontend",
-    shortDesc:
-      "Trang thương mại điện tử mua sắm thời trang cao cấp với giỏ hàng và thanh toán trực tuyến.",
-    longDesc:
-      "TrendyShop là một dự án đầy tâm huyết giúp người dùng trải nghiệm mua sắm mượt mà nhất. Hệ thống bao gồm tính năng lọc sản phẩm theo danh mục, sắp xếp giá, thanh toán giả lập, quản lý giỏ hàng real-time bằng React Context, và giao diện tương thích 100% mọi màn hình di động.",
-    tags: ["React", "Tailwind CSS", "Context API", "Framer Motion"],
+    title: "Website Cửa hàng thời trang XimenT",
+    category: "Fullstack",
+    shortDesc: "Trang thương mại điện tử mua sắm thời trang.",
+    longDesc: "Lorem",
+    tags: ["Laravel", "PHP", "MySQL", "Tailwind CSS"],
     image:
       "https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=600&q=80",
-    liveUrl: "https://your-demo-link.com",
-    githubUrl: "https://github.com/your-username/trendyshop",
+    githubUrl: "https://github.com/LnNhutTuong/XimenT",
     features: [
       "Bộ lọc sản phẩm đa năng nâng cao",
       "Giỏ hàng hoạt động mượt mà lưu trạng thái vào LocalStorage",
@@ -150,7 +147,7 @@ export const PROJECTS = [
   },
   {
     id: 2,
-    title: "Dashboard Quản Lý Rạp Chiếu Phim",
+    title: "Ứng dụng Quản lý bán hàng XimenT",
     category: "Fullstack",
     shortDesc:
       "Hệ thống quản trị lịch chiếu phim, ghế ngồi và doanh thu thời gian thực dành cho Admin.",
@@ -159,7 +156,6 @@ export const PROJECTS = [
     tags: ["React", "Node.js", "Express", "MongoDB", "Tailwind"],
     image:
       "https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?auto=format&fit=crop&w=600&q=80",
-    liveUrl: "https://your-demo-link.com",
     githubUrl: "https://github.com/your-username/cinema-dashboard",
     features: [
       "Đặt vé & Giữ ghế trực tuyến đồng bộ hóa thời gian thực",
@@ -179,7 +175,6 @@ export const PROJECTS = [
     tags: ["JavaScript", "OpenWeather API", "Tailwind CSS", "Vite"],
     image:
       "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?auto=format&fit=crop&w=600&q=80",
-    liveUrl: "https://your-demo-link.com",
     githubUrl: "https://github.com/your-username/weather-app",
     features: [
       "Tự động phát hiện vị trí của người dùng bằng GPS",
@@ -199,7 +194,6 @@ export const PROJECTS = [
     tags: ["Figma", "UI/UX", "Mobile Design", "Prototyping"],
     image:
       "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=600&q=80",
-    liveUrl: "https://your-figma-link.com",
     githubUrl: "#",
     features: [
       "Nghiên cứu thị trường sâu rộng & Xác định chân dung người dùng (Persona)",
