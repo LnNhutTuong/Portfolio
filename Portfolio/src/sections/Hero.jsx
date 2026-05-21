@@ -3,11 +3,11 @@ import { Icons } from "../components/Icon";
 const Hero = () => {
   const currentInfo = PERSONAL_INFO;
   return (
-    <section id="hero" className="scroll-mt-16">
+    <section id="hero" className="min-h-screen flex items-center scroll-mt-16 relative overflow-hidden">
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-indigo-500/10 rounded-full blur-[120px] pointer-events-none" />
       <div className="absolute top-10 left-10 w-[300px] h-[300px] bg-emerald-500/10 rounded-full blur-[80px] pointer-events-none" />
 
-      <div className="max-w-6xl h-screen mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-12 md:py-16 text-center flex items-center justify-center flex-col gap-4">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full py-12 md:py-16 text-center flex items-center justify-center flex-col gap-4">
         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black leading-tight tracking-tight">
           <span className="bg-gradient-to-r from-slate-500 to-indigo-400 bg-clip-text text-transparent hover:scale-105">
             Xin chào, tôi là

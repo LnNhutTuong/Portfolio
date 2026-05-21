@@ -80,7 +80,7 @@ const Navbar = () => {
             from-slate-400 to-indigo-400 bg-clip-text text-transparent 
             transition-all duration-300 hover:brightness-110"
           >
-            XimenT
+            XimenT Skibidi
           </span>
         </button>
 

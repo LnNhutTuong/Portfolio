@@ -50,11 +50,11 @@ const currentInfo = PERSONAL_INFO;
   return (
     <section
       id="contact"
-      className="scroll-mt-16 py-20 border-t bg-slate-950 border-slate-900 text-slate-100 relative overflow-hidden"
+      className="min-h-screen flex items-center scroll-mt-16 py-20 border-t bg-slate-950 border-slate-900 text-slate-100 relative overflow-hidden"
     >
       <div className="absolute -bottom-24 right-0 w-80 h-80 bg-indigo-500/5 rounded-full blur-[100px] pointer-events-none" />
 
-      <div className="max-w-6xl h-screen mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl font-bold tracking-tight">
             Liên Hệ & Trao Đổi

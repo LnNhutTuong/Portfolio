@@ -7,11 +7,11 @@ const About = () => {
   return (
     <section
       id="about"
-      className="scroll-mt-16 mt-4 py-20 border-t bg-slate-950/60 border-slate-900 text-slate-100"
+      className="min-h-screen flex items-center scroll-mt-16 mt-4 py-20 border-t bg-slate-950/60 border-slate-900 text-slate-100 relative overflow-hidden"
     >
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-indigo-500/10 rounded-full blur-[120px] pointer-events-none" />
       <div className="absolute bottom-10 left-10 w-[300px] h-[300px] bg-indigo-500/10 rounded-full blur-[80px] pointer-events-none" />
-      <div className="max-w-6xl h-screen mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl font-bold tracking-tight">
             Giới Thiệu Bản Thân
