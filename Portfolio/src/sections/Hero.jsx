@@ -3,7 +3,7 @@ import { Icons } from "../components/Icon";
 const Hero = () => {
   const currentInfo = PERSONAL_INFO;
   return (
-    <section id="hero" className="min-h-screen flex items-center scroll-mt-16 relative overflow-hidden">
+    <section id="hero" className="min-h-[calc(100vh-4rem)] flex items-center scroll-mt-16 relative overflow-hidden">
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-indigo-500/10 rounded-full blur-[120px] pointer-events-none" />
       <div className="absolute top-10 left-10 w-[300px] h-[300px] bg-emerald-500/10 rounded-full blur-[80px] pointer-events-none" />
 

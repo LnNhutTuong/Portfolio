@@ -50,7 +50,7 @@ const currentInfo = PERSONAL_INFO;
   return (
     <section
       id="contact"
-      className="min-h-screen flex items-center scroll-mt-16 py-20 border-t bg-slate-950 border-slate-900 text-slate-100 relative overflow-hidden"
+      className="min-h-[calc(100vh-4rem)] flex items-center scroll-mt-16 py-20 border-t bg-slate-950 border-slate-900 text-slate-100 relative overflow-hidden"
     >
       <div className="absolute -bottom-24 right-0 w-80 h-80 bg-indigo-500/5 rounded-full blur-[100px] pointer-events-none" />
 

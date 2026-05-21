@@ -7,7 +7,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="min-h-screen flex items-center scroll-mt-16 mt-4 py-20 border-t bg-slate-950/60 border-slate-900 text-slate-100 relative overflow-hidden"
+      className="min-h-[calc(100vh-4rem)] flex items-center scroll-mt-16 mt-4 py-20 border-t bg-slate-950/60 border-slate-900 text-slate-100 relative overflow-hidden"
     >
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-indigo-500/10 rounded-full blur-[120px] pointer-events-none" />
       <div className="absolute bottom-10 left-10 w-[300px] h-[300px] bg-indigo-500/10 rounded-full blur-[80px] pointer-events-none" />
