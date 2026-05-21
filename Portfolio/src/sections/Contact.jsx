@@ -1,22 +1,60 @@
 import { Icons } from "../components/Icon";
 import { PERSONAL_INFO } from "../data";
-
-const currentInfo = PERSONAL_INFO;
+import { useState } from "react";
+import { toast } from 'react-toastify';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
-  const copied = false;
-  const isSubmitting = false;
-  const submitStatus = null;
-  const handleSubmit = (e) => e.preventDefault();
+const currentInfo = PERSONAL_INFO;
+
+  //state save input
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: ''
+  });
+
+  //update state after input value
+  const handleOnChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    })
+  }
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      await emailjs.send(
+        "service_atf7q1b",
+        "template_sjkyqhe",
+        formData,
+        "xy12v0HxBwVifHw6e"
+    );
+
+    toast.success("Gửi mail thành công");
+
+    setFormData({
+      name: "",
+      email: "",
+      message: "",
+    });
+
+  } catch (error) {
+    toast.error("Gửi mail thất bại");
+    console.log(error);
+  }
+};
 
   return (
     <section
       id="contact"
-      className="py-20 border-t bg-slate-950 border-slate-900 text-slate-100 relative overflow-hidden"
+      className="scroll-mt-16 py-20 border-t bg-slate-950 border-slate-900 text-slate-100 relative overflow-hidden"
     >
       <div className="absolute -bottom-24 right-0 w-80 h-80 bg-indigo-500/5 rounded-full blur-[100px] pointer-events-none" />
 
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="max-w-6xl h-screen mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl font-bold tracking-tight">
             Liên Hệ & Trao Đổi
@@ -50,20 +88,11 @@ const Contact = () => {
                   </span>
                 </div>
 
-                {/* Nút Copy nhỏ bên góc phải */}
                 <div className="text-slate-500 group-hover:text-indigo-400 transition-colors pr-2">
-                  {copied ? (
-                    <span className="text-indigo-400 flex items-center space-x-1 text-xs">
-                      <Icons.Check />
-                      <span className="hidden xs:inline">Đã copy!</span>
-                    </span>
-                  ) : (
                     <Icons.Copy />
-                  )}
                 </div>
               </div>
 
-              {/* Khối Điện thoại / Zalo */}
               <div className="p-4 rounded-xl border flex items-center space-x-4 bg-slate-900/60 border-slate-800">
                 <div className="p-3 rounded-lg bg-indigo-500/10 text-indigo-400">
                   <Icons.Phone />
@@ -77,25 +106,9 @@ const Contact = () => {
                   </span>
                 </div>
               </div>
-
-              {/* Khối Địa chỉ */}
-              <div className="p-4 rounded-xl border flex items-center space-x-4 bg-slate-900/60 border-slate-800">
-                <div className="p-3 rounded-lg bg-teal-500/10 text-teal-400">
-                  <Icons.MapPin />
-                </div>
-                <div>
-                  <span className="block text-xs text-slate-500">
-                    Khu vực làm việc
-                  </span>
-                  <span className="font-semibold text-sm text-slate-200">
-                    {currentInfo.address}
-                  </span>
-                </div>
-              </div>
             </div>
           </div>
 
-          {/* CỘT PHẢI: Form gửi tin nhắn nhanh */}
           <div className="lg:col-span-7">
             <div className="p-6 sm:p-8 rounded-2xl border bg-slate-900/30 border-slate-800 shadow-xl relative">
               <h4 className="text-xl font-bold mb-6 text-white">
@@ -103,99 +116,59 @@ const Contact = () => {
               </h4>
 
               <form onSubmit={handleSubmit} className="space-y-5">
-                {/* Tên và Email xếp ngang trên máy tính, dọc trên điện thoại */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+
+                <div className="grid  grid-cols-1 sm:grid-cols-2 gap-5">
                   <div className="space-y-2">
                     <label className="block text-xs font-semibold uppercase tracking-wider text-slate-400">
                       Họ và tên
                     </label>
                     <input
+                      name = "name"
                       type="text"
                       required
                       placeholder="Nguyễn Văn A"
                       className="w-full px-4 py-3 rounded-xl border focus:outline-none focus:ring-2 focus:ring-indigo-500/50 focus:border-transparent transition-all bg-slate-900 border-slate-800 text-white placeholder-slate-650 text-sm"
+                      value = {formData.name}
+                      onChange={handleOnChange}
                     />
                   </div>
+
                   <div className="space-y-2">
                     <label className="block text-xs font-semibold uppercase tracking-wider text-slate-400">
                       Địa chỉ Email
                     </label>
                     <input
+                      name = "email"
                       type="email"
                       required
                       placeholder="name@example.com"
                       className="w-full px-4 py-3 rounded-xl border focus:outline-none focus:ring-2 focus:ring-indigo-500/50 focus:border-transparent transition-all bg-slate-900 border-slate-800 text-white placeholder-slate-650 text-sm"
+                      value = {formData.email}
+                      onChange={handleOnChange}
                     />
                   </div>
                 </div>
 
-                {/* Nội dung lời nhắn */}
                 <div className="space-y-2">
                   <label className="block text-xs font-semibold uppercase tracking-wider text-slate-400">
                     Nội dung tin nhắn
                   </label>
                   <textarea
+                    name = "message"
                     rows={4}
                     required
                     placeholder="Chào Minh, tôi có một dự án cần trao đổi..."
                     className="w-full px-4 py-3 rounded-xl border focus:outline-none focus:ring-2 focus:ring-indigo-500/50 focus:border-transparent transition-all bg-slate-900 border-slate-800 text-white placeholder-slate-650 text-sm"
+                    value = {formData.message}
+                    onChange={handleOnChange}
                   />
                 </div>
 
-                {/* Trạng thái gửi thành công */}
-                {submitStatus === "success" && (
-                  <div className="p-4 rounded-xl bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-sm flex items-center space-x-2 animate-fade-in">
-                    <Icons.Check />
-                    <span>
-                      Tin nhắn của bạn đã được gửi thành công! Tôi sẽ liên hệ
-                      lại sớm nhất.
-                    </span>
-                  </div>
-                )}
-
-                {/* Trạng thái gửi thất bại */}
-                {submitStatus === "error" && (
-                  <div className="p-4 rounded-xl bg-red-500/10 border border-red-500/20 text-red-400 text-sm animate-fade-in">
-                    Vui lòng điền đầy đủ tất cả các trường thông tin.
-                  </div>
-                )}
-
-                {/* Nút gửi tin nhắn */}
                 <button
                   type="submit"
-                  disabled={isSubmitting}
-                  className={`w-full py-3.5 rounded-xl font-bold bg-gradient-to-r from-indigo-500 to-teal-600 text-white hover:from-indigo-400 hover:to-teal-500 transition-all flex items-center justify-center space-x-2 shadow-lg shadow-indigo-500/10 ${
-                    isSubmitting
-                      ? "opacity-60 cursor-not-allowed"
-                      : "active:scale-95"
-                  }`}
+                  className={`w-full py-3.5 rounded-xl font-bold bg-gradient-to-r from-indigo-500 to-teal-600 text-white hover:from-indigo-400 hover:to-teal-500 transition-all flex items-center justify-center space-x-2 shadow-lg shadow-indigo-500/10  active:scale-95`}
                 >
-                  {isSubmitting ? (
-                    <>
-                      <svg
-                        className="animate-spin h-5 w-5 text-white"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                      >
-                        <circle
-                          className="opacity-25"
-                          cx="12"
-                          cy="12"
-                          r="10"
-                          stroke="currentColor"
-                          strokeWidth="4"
-                        />
-                        <path
-                          className="opacity-75"
-                          fill="currentColor"
-                          d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
-                        />
-                      </svg>
-                      <span>Đang gửi tin nhắn...</span>
-                    </>
-                  ) : (
-                    <span>Gửi tin nhắn</span>
-                  )}
+                  <span>Gửi tin nhắn</span>
                 </button>
               </form>
             </div>

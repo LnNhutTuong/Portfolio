@@ -130,76 +130,58 @@ export const SKILLS = [
 export const PROJECTS = [
   {
     id: 1,
-    title: "Website Cửa hàng thời trang XimenT",
+    title: "Website Cửa hàng XimenT-Store",
     category: "Fullstack",
-    shortDesc: "Trang thương mại điện tử mua sắm thời trang.",
-    longDesc: "Lorem",
-    tags: ["Laravel", "PHP", "MySQL", "Tailwind CSS"],
+    shortDesc:
+      "Hệ thống thương mại điện tử tích hợp website bán hàng (Storefront) hiện đại và trang quản trị (Admin Panel) chuyên nghiệp.",
+    longDesc:
+      "Hệ thống thương mại điện tử hoàn chỉnh dành cho cửa hàng bán lẻ XimenT. Phân hệ khách hàng (Storefront) cung cấp trải nghiệm mua sắm mượt mà với bộ lọc sản phẩm thông minh, giỏ hàng Livewire thời gian thực, quản lý đơn hàng cá nhân và tự động hủy đơn. Phân hệ quản trị (Admin Dashboard) mạnh mẽ với biểu đồ Chart.js thống kê doanh số trực quan, hệ thống quản lý danh mục, sản phẩm biến thể động (Multi-variant tracking), quản lý thương hiệu và quy trình xử lý đơn hàng tối ưu.",
+    tags: [
+      "Laravel 12",
+      "Livewire 3",
+      "Tailwind CSS",
+      "MySQL",
+      "Chart.js",
+      "Vite",
+    ],
     image:
       "https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=600&q=80",
-    githubUrl: "https://github.com/LnNhutTuong/XimenT",
+    githubUrl: "https://github.com/LnNhutTuong/Website-XimenT-Store",
     features: [
-      "Bộ lọc sản phẩm đa năng nâng cao",
-      "Giỏ hàng hoạt động mượt mà lưu trạng thái vào LocalStorage",
-      "Giao diện chuẩn Responsive & Tối ưu hóa điểm SEO",
-      "Trang Checkout chi tiết hóa đơn thanh toán",
+      "Giao diện Responsive chuẩn chỉ, tối ưu hóa trải nghiệm di động & hiệu năng SEO vượt trội.",
+      "Bộ lọc sản phẩm đa tiêu chí thông minh (theo danh mục, thương hiệu, thuộc tính kích cỡ) và thanh tìm kiếm tối ưu.",
+      "Giỏ hàng tương tác thời gian thực sử dụng Livewire 3 và quy trình thanh toán (Checkout) bảo mật.",
+      "Hệ thống quản lý biến thể sản phẩm động (quản lý kích thước, giá cả, số lượng tồn kho theo từng variant).",
+      "Dashboard quản trị trực quan tích hợp biểu đồ thống kê doanh số (Chart.js) và bộ quản lý CRUD toàn diện.",
+      "Cơ chế theo dõi trạng thái đơn hàng thời gian thực và hỗ trợ hủy đơn trực tiếp dành cho khách hàng.",
     ],
   },
   {
     id: 2,
     title: "Ứng dụng Quản lý bán hàng XimenT",
-    category: "Fullstack",
+    category: "Desktop Application",
     shortDesc:
-      "Hệ thống quản trị lịch chiếu phim, ghế ngồi và doanh thu thời gian thực dành cho Admin.",
+      "Phần mềm quản lý bán hàng offline tại cửa hàng với kiến trúc 3 lớp (3-Tier) tối ưu và giao diện Guna.UI2 WinForms hiện đại.",
     longDesc:
-      "Hệ thống quản trị mạnh mẽ giúp nhân viên rạp quản lý sơ đồ ghế, thêm bớt phim chiếu và cập nhật giá vé động. Tích hợp biểu đồ thống kê trực quan hiển thị doanh số bán vé hàng tuần/tháng bằng Chart.js.",
-    tags: ["React", "Node.js", "Express", "MongoDB", "Tailwind"],
-    image:
-      "https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?auto=format&fit=crop&w=600&q=80",
-    githubUrl: "https://github.com/your-username/cinema-dashboard",
-    features: [
-      "Đặt vé & Giữ ghế trực tuyến đồng bộ hóa thời gian thực",
-      "Dashboard thống kê doanh thu biểu đồ cột & tròn chuyên nghiệp",
-      "Phân quyền người dùng (Admin, Nhân viên, Khách hàng)",
-      "Gửi email xác nhận đặt vé tự động",
+      "Giải pháp phần mềm quản lý vận hành nội bộ (ERP thu nhỏ) cho cửa hàng XimenT. Được xây dựng trên nền tảng .NET và SQL Server với kiến trúc 3-Layer (GUI - BUS - DAO) chuẩn chỉnh. Ứng dụng tích hợp bộ thư viện giao diện Guna.UI2 cao cấp mang lại giao diện người dùng mượt mà, chuyên nghiệp. Hệ thống hỗ trợ đầy đủ các nghiệp vụ thực tế như quản lý và bảo mật thông tin nhân viên bằng BCrypt, quản lý khách hàng có ràng buộc hóa đơn chặt chẽ, kiểm soát kho hàng, tạo hóa đơn bán hàng trực tiếp tại quầy và xuất báo cáo/in hóa đơn qua Microsoft ReportViewer.",
+    tags: [
+      "C# (.NET)",
+      "WinForms",
+      "SQL Server",
+      "Guna.UI2",
+      "ReportViewer",
+      "3-Layer Architecture",
     ],
-  },
-  {
-    id: 3,
-    title: "Ứng Dụng Xem Thời Tiết Toàn Cầu",
-    category: "Frontend",
-    shortDesc:
-      "Dự báo thời tiết 7 ngày tới dựa theo vị trí GPS hoặc tìm kiếm thành phố.",
-    longDesc:
-      "Dự án tương tác với API thời tiết OpenWeatherMap thế giới để trả về các thông số môi trường chuẩn xác như độ ẩm, chỉ số UV, tốc độ gió và hiển thị giao diện động thay đổi theo trạng thái thời tiết (mưa, nắng, tuyết).",
-    tags: ["JavaScript", "OpenWeather API", "Tailwind CSS", "Vite"],
     image:
-      "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?auto=format&fit=crop&w=600&q=80",
-    githubUrl: "https://github.com/your-username/weather-app",
+      "https://images.unsplash.com/photo-1554415707-6e8cfc93fe23?auto=format&fit=crop&w=600&q=80",
+    githubUrl: "https://github.com/LnNhutTuong/Manager-XimenT",
     features: [
-      "Tự động phát hiện vị trí của người dùng bằng GPS",
-      "Biểu đồ dự báo nhiệt độ các mốc giờ trong ngày",
-      "Tìm kiếm nhanh hơn 200,000 thành phố trên toàn cầu",
-      "Đổi hình nền ứng dụng tương thích với thời tiết hiện tại",
-    ],
-  },
-  {
-    id: 4,
-    title: "Thiết kế UI/UX Ứng Dụng TravelGo",
-    category: "Design",
-    shortDesc:
-      "Bản vẽ thiết kế ứng dụng di động hỗ trợ đặt tour du lịch bụi giá rẻ.",
-    longDesc:
-      "Hồ sơ thiết kế hoàn chỉnh trên Figma từ nghiên cứu người dùng (User Research), vẽ sơ đồ luồng (Wireframe), thiết kế chi tiết (High-fidelity) đến tạo chuyển động tương tác trực quan cho hơn 15 màn hình ứng dụng.",
-    tags: ["Figma", "UI/UX", "Mobile Design", "Prototyping"],
-    image:
-      "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=600&q=80",
-    githubUrl: "#",
-    features: [
-      "Nghiên cứu thị trường sâu rộng & Xác định chân dung người dùng (Persona)",
-      "Hệ thống màu sắc và Typography thống nhất (Design System)",
-      "Nguyên mẫu tương tác cao (Interactive Prototype) bấm như app thật",
-      "Tối ưu hóa các nút chạm (Touch target) chuẩn Apple HIG",
+      "Kiến trúc 3 lớp (Presentation - Business Logic - Data Access) phân tách rõ ràng, giúp dễ dàng bảo trì và mở rộng.",
+      "Thiết kế giao diện Guna.UI2 cao cấp, mượt mà và trực quan, nâng cao tối đa trải nghiệm người dùng.",
+      "Hệ thống xác thực và phân quyền nhân viên an toàn tuyệt đối với cơ chế mã hóa mật khẩu BCrypt.",
+      "Quản lý chặt chẽ danh mục khách hàng, nhân viên, có cơ chế kiểm tra ràng buộc khóa ngoại ngăn xóa dữ liệu lỗi.",
+      "Hỗ trợ nhân viên thu ngân lập hóa đơn và thanh toán trực tiếp tại quầy nhanh chóng, chính xác.",
+      "Xuất hóa đơn, biên lai bán hàng và báo cáo thống kê doanh số trực quan thông qua Microsoft ReportViewer.",
     ],
   },
 ];
