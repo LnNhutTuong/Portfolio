@@ -21,11 +21,11 @@ function App() {
       pauseOnFocusLoss
       draggable
       pauseOnHover
-      theme="dark"
+      theme="light"
       transition={Bounce}
     />
       <Navbar />
-      <main className="relative pt-16 pb-12 overflow-hidden bg-slate-950 text-slate-100">
+      <main className="relative pt-16 pb-12 overflow-hidden bg-white text-stone-900">
         <Hero />
         <About />
         <Project />

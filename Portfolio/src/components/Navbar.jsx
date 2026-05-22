@@ -65,7 +65,7 @@ const Navbar = () => {
   return (
     <header
       className="fixed top-0 left-0 right-0 z-40 
-      backdrop-blur-md border-b bg-slate-950/80 border-slate-900"
+      backdrop-blur-md border-b bg-white/80 border-slate-200/80"
     >
       <div
         className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 
@@ -77,7 +77,7 @@ const Navbar = () => {
         >
           <span
             className="text-xl font-bold tracking-tight bg-gradient-to-r 
-            from-slate-400 to-indigo-400 bg-clip-text text-transparent 
+            from-stone-800 to-stone-900 bg-clip-text text-transparent 
             transition-all duration-300 hover:brightness-110"
           >
             XimenT
@@ -95,8 +95,8 @@ const Navbar = () => {
                 className={`relative py-2 text-sm font-medium 
                 transition-colors duration-300 group ${
                   isActive
-                    ? "text-white"
-                    : "text-slate-400 hover:text-white"
+                    ? "text-stone-950"
+                    : "text-stone-600 hover:text-stone-950"
                 }`}
               >
                 {item.label}
@@ -104,7 +104,7 @@ const Navbar = () => {
                 <span
                   className={`absolute bottom-0 left-1/2 
                   -translate-x-1/2 h-[2px] 
-                  bg-gradient-to-r from-indigo-400 to-pink-400 
+                  bg-gradient-to-r from-stone-900 to-stone-950 
                   transition-all duration-300 origin-center ${
                     isActive
                       ? "w-full scale-x-100"
